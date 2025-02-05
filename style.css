@@ -89,7 +89,7 @@ body {
   position: fixed;
   top: 0;
   right: -300px;
-  width: 150px;
+  width: 200px;
   height: 100%;
   background-color: #161616;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
@@ -105,11 +105,12 @@ body {
 .card-menu .hamburger-card--links {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 24px;
 }
 .card-menu .hamburger-card--links a {
   color: white;
   text-decoration: none;
+  font-size: 20px;
 }
 .card-menu .hamburger-card--social {
   display: flex;
@@ -158,16 +159,27 @@ body {
 
 a.button {
   font-size: 16px;
-  color: white;
+  color: rgb(218, 165, 32);
   padding: 8px 16px;
-  border: 1px solid white;
+  border: 1px solid rgb(218, 165, 32);
   transition: all 0.2s;
   text-decoration: none;
   border-radius: 4px;
 }
 a.button:hover {
-  border: 1px solid rgb(218, 165, 32);
-  color: rgb(218, 165, 32);
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.button-gold {
+  background: rgb(218, 165, 32);
+  color: black !important;
+  border: 1px solid transparent !important;
+}
+.button-gold:hover {
+  border: 1px solid rgb(218, 165, 32) !important;
+  background: black;
+  color: rgb(218, 165, 32) !important;
 }
 
 i {
@@ -274,8 +286,6 @@ footer .copyright {
 .home header .header--container .button {
   padding: 12px 24px;
   background: black;
-  color: white;
-  border: 1px solid white;
   transition: all 0.2s;
   border-radius: 4px;
   font-size: 20px;
@@ -285,10 +295,6 @@ footer .copyright {
   .home header .header--container .button {
     font-size: 16px;
   }
-}
-.home header .header--container .button:hover {
-  border: 1px solid rgb(218, 165, 32);
-  color: rgb(218, 165, 32);
 }
 .home .video {
   padding-top: 60px;
@@ -400,12 +406,17 @@ footer .copyright {
 .home .client-photos--container {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 24px;
+}
+@media screen and (max-width: 768px) {
+  .home .client-photos--container {
+    padding: 0 16px;
+  }
 }
 .home .client-photos--container .item {
-  flex: 1 0 32%;
-  height: 20px;
-  background: red;
+  flex: 1 0 31%;
+  height: 400px;
+  background-size: cover;
 }
 @media screen and (max-width: 768px) {
   .home .client-photos--container .item {
@@ -433,12 +444,13 @@ footer .copyright {
   user-select: none;
 }
 .home .testimonials .testimonial-container .testimonial p {
-  font-size: 24px;
+  font-size: 20px;
   color: white;
+  line-height: 120%;
 }
 .home .testimonials .testimonial-container .testimonial .name {
-  font-weight: bold;
-  margin-top: 10px;
+  font-weight: 500;
+  margin-top: 16px;
 }
 .home .testimonials .buttons {
   text-align: center;
@@ -452,6 +464,29 @@ footer .copyright {
   cursor: pointer;
   margin: 0 5px;
   border-radius: 5px;
+}
+.home .newsletter {
+  background: #1e1e1e;
+  padding: 80px 0;
+  margin: 100px 0 50px 0;
+}
+@media screen and (max-width: 768px) {
+  .home .newsletter {
+    padding: 60px 16px;
+  }
+}
+.home .newsletter--container {
+  text-align: center;
+  color: white;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.home .newsletter--container h3 {
+  font-size: 24px;
+  font-weight: 500;
+}
+.home .newsletter--container .button--container {
+  margin-top: 32px;
 }
 
 .about .item--container {
@@ -518,6 +553,30 @@ footer .copyright {
   .about #monique .text-container {
     order: 2;
   }
+}
+.about .how-it-works {
+  background: #1e1e1e;
+  padding: 80px 0;
+}
+@media screen and (max-width: 768px) {
+  .about .how-it-works {
+    padding: 40px 16px;
+  }
+}
+.about .how-it-works--container {
+  text-align: center;
+  color: white;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.about .how-it-works--container h3 {
+  margin-bottom: 24px;
+  font-size: 24px;
+  font-weight: 500;
+}
+.about .how-it-works--container p {
+  line-height: 150%;
+  font-weight: 300;
 }
 
 /*# sourceMappingURL=style.css.map */

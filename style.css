@@ -159,16 +159,16 @@ body {
 
 a.button {
   font-size: 16px;
-  color: rgb(218, 165, 32);
+  color: #fff;
   padding: 8px 16px;
-  border: 1px solid rgb(218, 165, 32);
+  border: 1px solid #fff;
   transition: all 0.2s;
   text-decoration: none;
   border-radius: 4px;
 }
 a.button:hover {
-  border: 1px solid #fff;
-  color: #fff;
+  border: 1px solid rgb(218, 165, 32);
+  color: rgb(218, 165, 32);
 }
 
 .button-gold {
@@ -188,6 +188,15 @@ i {
 }
 i:hover {
   color: rgb(218, 165, 32);
+}
+
+.sub-header {
+  margin-bottom: 24px;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  color: white;
+  margin-top: 60px;
 }
 
 footer {
@@ -264,7 +273,7 @@ footer .copyright {
   align-items: center;
   text-align: center;
   color: white;
-  gap: 24px;
+  gap: 16px;
 }
 .home header .header--container-text h1 {
   font-size: 48px;
@@ -276,7 +285,8 @@ footer .copyright {
 }
 .home header .header--container-text h2 {
   font-size: 28px;
-  font-weight: 300;
+  font-weight: 500;
+  color: rgb(218, 165, 32);
 }
 @media screen and (max-width: 768px) {
   .home header .header--container-text h2 {
@@ -296,21 +306,28 @@ footer .copyright {
     font-size: 16px;
   }
 }
-.home .video {
+.home .video-container {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
   padding-top: 60px;
   padding-bottom: 40px;
-  max-width: 900px;
-  margin: 0 auto;
 }
-.home .video h2 {
+.home .video-container h2 {
   color: white;
   text-align: center;
   font-size: 32px;
   margin-bottom: 32px;
 }
+.home video {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 .home .blurb {
-  padding-top: 60px;
   padding-bottom: 40px;
+  background: #1e1e1e;
+  padding: 40px 16px;
 }
 @media screen and (max-width: 1024px) {
   .home .blurb {
@@ -399,9 +416,9 @@ footer .copyright {
 .home .client-photos h2 {
   color: white;
   text-align: center;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 500;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
 .home .client-photos--container {
   display: flex;
@@ -431,6 +448,13 @@ footer .copyright {
   position: relative;
   margin: 60px auto;
 }
+.home .testimonials h2 {
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 20px;
+}
 .home .testimonials .testimonial-container {
   display: flex;
   transition: transform 0.5s ease-in-out;
@@ -447,6 +471,7 @@ footer .copyright {
   font-size: 20px;
   color: white;
   line-height: 120%;
+  font-weight: 300;
 }
 .home .testimonials .testimonial-container .testimonial .name {
   font-weight: 500;
@@ -467,8 +492,8 @@ footer .copyright {
 }
 .home .newsletter {
   background: #1e1e1e;
-  padding: 80px 0;
-  margin: 100px 0 50px 0;
+  padding: 60px 0;
+  margin: 100px 0 20px 0;
 }
 @media screen and (max-width: 768px) {
   .home .newsletter {
@@ -482,11 +507,15 @@ footer .copyright {
   margin: 0 auto;
 }
 .home .newsletter--container h3 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
 }
 .home .newsletter--container .button--container {
   margin-top: 32px;
+}
+.home .newsletter--container .button--container a {
+  font-weight: 500;
+  padding: 8px 32px;
 }
 
 .about .item--container {
@@ -554,27 +583,36 @@ footer .copyright {
     order: 2;
   }
 }
-.about .how-it-works {
+
+.works--image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 16px;
+  color: white;
+  flex-direction: column;
+}
+.works--image img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 8px;
+}
+.works .how-it-works {
   background: #1e1e1e;
-  padding: 80px 0;
+  padding: 40px 16px;
 }
 @media screen and (max-width: 768px) {
-  .about .how-it-works {
+  .works .how-it-works {
     padding: 40px 16px;
   }
 }
-.about .how-it-works--container {
+.works .how-it-works--container {
   text-align: center;
   color: white;
   max-width: 800px;
   margin: 0 auto;
 }
-.about .how-it-works--container h3 {
-  margin-bottom: 24px;
-  font-size: 24px;
-  font-weight: 500;
-}
-.about .how-it-works--container p {
+.works .how-it-works--container p {
   line-height: 150%;
   font-weight: 300;
 }

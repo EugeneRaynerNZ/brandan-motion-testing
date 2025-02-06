@@ -15,7 +15,6 @@
 <body class="home">
 
     <!-- Navigation -->
-    <!-- Navigation -->
     <nav class="navbar">
         <div class="hamburger" id="hamburger">
             <span>&#9776;</span>
@@ -29,6 +28,7 @@
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="meet-your-coaches.html">Meet your coaches</a></li>
+                <li><a href="how-it-works.html">How it works</a></li>
                 <li><a href="https://form.jotform.com/250326653015045" target="_blank">Contact us</a></li>
             </ul>
             <div class="nav-links">
@@ -50,6 +50,7 @@
             <div class="hamburger-card--links">
                 <div><a href="index.html">Home</a></div>
                 <div><a href="meet-your-coaches.html">Meet your coaches</a></div>
+                <div><a href="how-it-works.html">How it works</a></div>
                 <div><a href="https://form.jotform.com/250326653015045" target="_blank">Contact us</a></div>
             </div>
             <div class="hamburger-divider"></div>
@@ -84,8 +85,8 @@
 
             <section class="video">
                 <!-- <h2>Who we are</h2> -->
-                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
-                  <iframe 
+                <!-- <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;"> -->
+                  <!-- <iframe 
                     src="https://www.youtube.com/embed/G49VAAS8A6E?si=dFekxtw6qt7oJFFU" 
                     title="YouTube video player" 
                     frameborder="0" 
@@ -93,14 +94,25 @@
                     referrerpolicy="strict-origin-when-cross-origin" 
                     allowfullscreen
                     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-                  </iframe>
+                  </iframe> -->
+                <!-- </div> -->
+
+                <div class="video-container">
+                    <video id="videoPlayer" controls>
+                        <source src="how-we-can-help.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
               </section>
 
-              <section class="blurb">
+            </div>
+
+            <section class="blurb">
                 <h2>What's the difference between having a personal trainer and working with us?</h2>
                 <p>Through our online model, we've found that clients achieve way better results. It's not only about hitting the gym, we keep you accountable by reviewing your daily steps, sleep, stress, fitness and food. So everything outside of the gym is covered too. This approach not only speeds up progress but in our experience, the support and guidance offered online really transform lives.</p>
-              </section>
+            </section>
+
+            <div class="container">
 
               <section class="about-us">
                 <div class="about-us--item">
@@ -112,7 +124,7 @@
                         </div>
                         
                         <div class="button-container">
-                            <a class="button" href="meet-your-trainers.html">Join me</a>
+                            <a class="button" href="meet-your-coaches.html">Join me</a>
                         </div>
                     </div>
                 </div>
@@ -138,7 +150,7 @@
                         </div>
                         
                         <div class="button-container">
-                            <a class="button" href="meet-your-trainers.html#monique">Join me</a>
+                            <a class="button" href="meet-your-coaches.html#monique">Join me</a>
                         </div>
                     </div>
                 </div>
@@ -148,9 +160,9 @@
 
             <section class="newsletter">
                 <div class="newsletter--container">
-                    <h3>Get free Weekly Nutrition & Training Tips</h3>
+                    <h3>Click below for:</h3>
                     <div class="button--container">
-                        <a href="https://form.jotform.com/250348500158048" target="_blank" class="button button-gold">Subscribe to mailing list</a>
+                        <a href="https://form.jotform.com/250348500158048" target="_blank" class="button button-gold">Free Nutrition & Training Tips</a>
                     </div>
                 </div>
             </section>
@@ -174,6 +186,7 @@
               </section>
 
               <section class="testimonials">
+                <h2>What our clients say</h2>
                 <div class="testimonial-container">
                     <div class="testimonial">
                         <p>"Your program delivered all the objectives I wanted. What quantity to eat, what exercises to do, steps and it got me back into the equipment room at the gym not just doing classes."</p>
@@ -237,6 +250,7 @@
     <!-- script should always be at the bottom and load last -->
     <script src="nav.js"></script>
     <script src="slider.js"></script>
+    <!-- <script src="video.js"></script> -->
     
 </body>
 </html>

@@ -313,6 +313,12 @@ footer .copyright {
   padding-top: 60px;
   padding-bottom: 40px;
 }
+@media screen and (max-width: 768px) {
+  .home .video-container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
 .home .video-container h2 {
   color: white;
   text-align: center;

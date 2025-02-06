@@ -385,6 +385,21 @@ footer .copyright {
     flex: 1 0 100%;
   }
 }
+@media screen and (max-width: 768px) {
+  .home .about-us--item.brandan-about {
+    order: 1;
+  }
+}
+@media screen and (max-width: 768px) {
+  .home .about-us--item.monique-about {
+    order: 2;
+  }
+}
+@media screen and (max-width: 768px) {
+  .home .about-us--item.both-about {
+    order: 3;
+  }
+}
 .home .about-us--item .cover-image {
   max-width: 100%;
   background-size: cover;

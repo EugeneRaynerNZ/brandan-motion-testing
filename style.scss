@@ -448,6 +448,24 @@ footer {
                 flex: 1 0 100%;
             }
 
+            &.brandan-about {
+                @media screen and (max-width: 768px) {
+                    order: 1;
+                }
+            }
+
+            &.monique-about {
+                @media screen and (max-width: 768px) {
+                    order: 2;
+                }
+            }
+
+            &.both-about {
+                @media screen and (max-width: 768px) {
+                    order: 3;
+                }
+            }
+
             .cover-image {
                 max-width: 100%;
                 background-size: cover;

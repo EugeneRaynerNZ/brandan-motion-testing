@@ -275,6 +275,11 @@ footer .copyright {
   color: white;
   gap: 16px;
 }
+@media screen and (max-width: 768px) {
+  .home header .header--container-text {
+    margin-top: 165px;
+  }
+}
 .home header .header--container-text h1 {
   font-size: 48px;
 }
@@ -308,10 +313,8 @@ footer .copyright {
 }
 .home .video-container {
   max-width: 800px;
-  margin: auto;
-  text-align: center;
-  padding-top: 60px;
-  padding-bottom: 40px;
+  margin: 0 auto;
+  padding: 80px 0;
 }
 @media screen and (max-width: 768px) {
   .home .video-container {
@@ -325,10 +328,19 @@ footer .copyright {
   font-size: 32px;
   margin-bottom: 32px;
 }
-.home video {
+.home .video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.home .video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  height: 100%;
 }
 .home .blurb {
   padding-bottom: 40px;
@@ -385,6 +397,12 @@ footer .copyright {
     flex: 1 0 100%;
   }
 }
+.home .about-us--item h1 {
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
 @media screen and (max-width: 768px) {
   .home .about-us--item.brandan-about {
     order: 1;
@@ -400,11 +418,20 @@ footer .copyright {
     order: 3;
   }
 }
+.home .about-us--item .link {
+  overflow: hidden;
+  display: block;
+}
 .home .about-us--item .cover-image {
   max-width: 100%;
   background-size: cover;
   background-position: top center;
+  background-repeat: no-repeat;
   height: 400px;
+  transition: all 0.4s ease-in-out;
+}
+.home .about-us--item .cover-image:hover {
+  transform: scale(1.05);
 }
 .home .about-us--item .item-container {
   display: flex;

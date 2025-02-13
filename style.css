@@ -9,6 +9,10 @@ body {
   font-optical-sizing: auto;
 }
 
+a {
+  cursor: pointer;
+}
+
 .navbar {
   position: sticky;
   top: 0;
@@ -36,6 +40,11 @@ body {
   font-weight: 300;
   letter-spacing: 0.5px;
   font-size: 16px;
+}
+.navbar-container ul li a.active {
+  border-bottom: 2px solid #fff;
+  font-weight: 400;
+  padding-bottom: 4px;
 }
 .navbar-container ul li:hover a {
   color: rgb(218, 165, 32);
@@ -169,6 +178,13 @@ a.button {
 a.button:hover {
   border: 1px solid rgb(218, 165, 32);
   color: rgb(218, 165, 32);
+}
+a.button.button--link {
+  border: none;
+  padding: 0;
+  padding-bottom: 4px;
+  color: rgb(218, 165, 32);
+  border-bottom: 1px solid rgb(218, 165, 32);
 }
 
 .button-gold {
@@ -453,10 +469,31 @@ footer .copyright {
   font-weight: 300;
   line-height: 150%;
 }
+.home .about-us--item .item-container .text-container.text-container--variant {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.home .about-us--item .item-container .text-container.text-container--variant h2 {
+  margin-bottom: 0;
+}
 .home .about-us--item .item-container .button-container {
   padding: 0 16px;
   margin-top: 8px;
   text-align: center;
+}
+.home .about-us--item .item-container .button-container--variant {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+.home .about-us--item .item-container .button-container--variant2 {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .home .client-photos {
   padding: 80px 0 60px 0;

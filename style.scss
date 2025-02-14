@@ -580,6 +580,15 @@ footer {
                         flex-direction: column;
                         align-items: center;
                         justify-content: center;
+
+                        .button--link {
+                            border-radius: 0;
+
+                            &:hover {
+                                color: $button-hover--color2;
+                                border-bottom: 1px solid $button-hover--color2;
+                            }
+                        }
                     }
                 }
             }
